@@ -1,0 +1,50 @@
+ /* Estilos para la barra de navegación */
+ ul.navbar {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     background-color: #020213;
+     /* Color de fondo de la barra */
+     overflow: hidden;
+ }
+
+ ul.navbar li {
+     float: left;
+ }
+
+ ul.navbar li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 12px;
+     text-decoration: none;
+     margin-left: 75px;
+     position: relative;
+ }
+
+ /* Estilos para cuando se pasa el mouse sobre un enlace */
+ ul.navbar li a:hover {
+     background-color: #17d8ce;
+     /* Color de fondo cuando se pasa el mouse */
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+     background: linear-gradient(to bottom, #02222e, #103955, #65a8df);
+ }
+
+ /* Estilos para centrar la barra de navegación en la parte superior */
+ .navbar-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 60px;
+     /* Ajusta la altura según tus preferencias */
+ }
+
+ .text-align {
+     text-align: center;
+     color: aliceblue;
+ }

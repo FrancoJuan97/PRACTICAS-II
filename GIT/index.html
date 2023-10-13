@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ESTILOS CSS/style.css">
+    <title>GIT</title>
+</head>
+
+<body>
+    <header>
+        <h1>GIT</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="current-page" ><a href="../TRABAJO PRACTICO N°1/index.html">INICIO</a></li>
+            </ul> 
+        </nav>
+    <h3>Control de Versiones</h3>
+    <p>Git es un sistema de control de versiones distribuido de código abierto diseñado para ser rápido y eficiente.
+    </p>
+    <p>Un sistema de control de versiones permite a sus usuarios almacenar revisiones diferentes de un mismo archivo y
+        compararlas, restaurarlas y a veces mezclarlas.</p>
+    <p>Comparado con sistemas de control de versión antiguos como SVN o CVS, Git no necesita de un repositorio (lugar
+        donde se alojan los archivos y sus versiones) central. Esto es lo que lo hace un sistema distribuido lo cual da
+        una flexibilidad imposible con otros sistemas.
+    </p>
+    <p>Los repositorios de cada usuarios son un clon completo y no una copia parcial de la última versión, esto permite,
+        entre otras cosas, trabajar en modo offline, para luego, en caso de ser necesario, sincronizar los cambios con
+        un repositorio remoto (trabajo colaborativo).
+    </p>
+    <h3>Los Tres Estados </h3>
+    <p>Git tiene tres estados principales en los que se pueden encontrar tus archivos:
+        confirmado (committed), modificado (modified), y preparado (staged).
+    </p>
+    <ul>
+        <li>
+            <p><b>Confirmado:</b> Significa que los datos están almacenados de manera segura en nuestro repositorio
+                local.</p>
+        </li>
+        <li>
+            <p><b>Modificado:</b> Significa que modificamos el archivo pero todavía no lo hemos confirmado a nuestro
+                repositorio.</p>
+        </li>
+        <li>
+            <p><b>Preparado:</b> Significa que marcamos un archivo modificado en su versión actual para que vaya en tu
+                próxima
+                confirmación.</p>
+        </li>
+    </ul>
+    <img src="Estadosdegit.jpg" alt="Estados de git" width="400">
+    <h3>Algunos de los comando de Git</h3>
+    <p><b>Git status:</b>Es un comando en Git que se utiliza para verificar el estado actual de tu repositorio de Git.
+        Cuando ejecutas git status, obtienes información sobre qué archivos han sido modificados, agregados, eliminados
+        o están en un estado pendiente de ser confirmados en tu proyecto</p>
+    <img src="gitstatus.jpg" alt="gitstatus" width="400">
+    <p><b>Git add:</b> Acepta otro tipo de parámetros que nos serán útiles para trabajar con varios archivos a la vez,
+        por
+        ejemplo:
+    </p>
+    <ul>
+        <li>
+            <p><b>Git add *.jpg:</b> Agregará todos los archivos cuyo nombre termine en .jpg al área de stage.</p>
+        </li>
+        <li>
+            <p><b>Git add ruta/a/directorio:</b> Agregará todos los archivos del directorio al área de stage.</p>
+        </li>
+        <li>
+            <b>
+                <p>Git add . :
+            </b> Agregará todos los archivos modificados y/o no trackeados al área de stage.</p>
+        </li>
+    </ul>
+    <p><b>Git commit:</b> confirma los cambios del área de stage y los guarda en el
+        repositorio. El parámetro -m es requerido y se utiliza para asociar un mensaje al
+        commit que estemos haciendo. Este mensaje va siempre entre comillas dobles. Es
+        muy importante que los mensajes sean lo suficientemente descriptivos como para
+        que si el día de mañana revisamos la historia de nuestro repositorio sepamos donde
+        se hizo cada cambio o conjunto de cambios.
+    <p><b>Git pull:</b>El comando git pull se utiliza para traer cambios desde un repositorio remoto a tu repositorio
+        local. Cuando ejecutas git pull, Git buscará cambios en el repositorio remoto y los fusionará automáticamente
+        con tu rama local. Es una forma de mantener tu rama local actualizada con los cambios realizados por otros
+        colaboradores en el repositorio remoto.</p>
+    </p>
+    <p><b>Git push:</b>El comando git push se utiliza para enviar tus cambios locales a un repositorio remoto. Cuando
+        ejecutas git push, estás compartiendo tus modificaciones locales con otros colaboradores del proyecto al
+        subirlas al repositorio remoto. Esto permite mantener sincronizado el trabajo de diferentes personas en un
+        proyecto Git.</p>
+    <p><b>Git log:</b> Revisa el historial de nuestro repositorio</p>
+</div>
+</body>
+
+</html>
